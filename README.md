@@ -5,14 +5,14 @@ Este repositório contém um script Python que gera gráficos de várias funçõ
 ## Visão Geral
 
 O script define oito funções matemáticas comuns e as visualiza em subgráficos separados. Cada gráfico inclui uma grade, eixos horizontais e verticais em zero, e um título para maior clareza. As funções plotadas são:
-- Linear (\(x\))
-- Parabólica (\(x^2\))
-- Cúbica (\(x^3\))
-- Quártica (\(x^4\))
-- Seno (\(\sin(x)\))
-- Cosseno (\(\cos(x)\))
-- Gaussiana (\(e^{-x^2}\))
-- Sigmoide (\(\frac{1}{1 + e^{-x}}\))
+- Linear 
+- Parabólica
+- Cúbica 
+- Quártica
+- Seno 
+- Cosseno 
+- Gaussiana 
+- Sigmoide 
 
 ## Funcionalidades
 - Gera uma grade de subgráficos 4x2 usando Matplotlib.
@@ -40,7 +40,7 @@ O script define oito funções matemáticas comuns e as visualiza em subgráfico
 1. Certifique-se de que todas as dependências estão instaladas.
 2. Execute o script:
    ```bash
-   python plot_functions.py
+   python main.py
    ```
 3. O script abrirá uma janela exibindo a grade de gráficos 4x2. Feche a janela para encerrar o programa.
 
