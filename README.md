@@ -1,54 +1,66 @@
-````markdown
-# Visualização de Funções Matemáticas com Python
+# Script de Plotagem de Funções Matemáticas
 
-Este repositório contém um script educacional desenvolvido para auxiliar no ensino de disciplinas do ciclo básico de cursos de engenharia, como Cálculo I e Introdução à Programação. A ferramenta visa promover a aprendizagem ativa e significativa por meio da visualização computacional de funções matemáticas fundamentais.
+Este repositório contém um script Python que gera gráficos de várias funções matemáticas utilizando as bibliotecas NumPy e Matplotlib. O script cria uma grade de subgráficos 4x2, exibindo os gráficos das funções linear, quadrática, cúbica, quártica, seno, cosseno, gaussiana e sigmoide no intervalo \([-10, 10]\).
 
-## Objetivo
+## Visão Geral
 
-Apresentar graficamente o comportamento de oito funções matemáticas clássicas, utilizando Python com as bibliotecas NumPy e Matplotlib. A ideia é integrar conceitos de programação e matemática para fortalecer a compreensão dos estudantes sobre a forma, crescimento e simetria das funções.
+O script define oito funções matemáticas comuns e as visualiza em subgráficos separados. Cada gráfico inclui uma grade, eixos horizontais e verticais em zero, e um título para maior clareza. As funções plotadas são:
+- Linear (\(x\))
+- Parabólica (\(x^2\))
+- Cúbica (\(x^3\))
+- Quártica (\(x^4\))
+- Seno (\(\sin(x)\))
+- Cosseno (\(\cos(x)\))
+- Gaussiana (\(e^{-x^2}\))
+- Sigmoide (\(\frac{1}{1 + e^{-x}}\))
 
-## Funções Visualizadas
+## Funcionalidades
+- Gera uma grade de subgráficos 4x2 usando Matplotlib.
+- Plota funções com uma resolução de 400 pontos no intervalo \([-10, 10]\).
+- Inclui linhas de grade e marcadores de eixos para melhor visualização.
+- Utiliza formatação no estilo LaTeX para os títulos das funções.
 
-- Função Linear: `f(x) = x`
-- Função Quadrática: `f(x) = x²`
-- Função Cúbica: `f(x) = x³`
-- Função Quártica: `f(x) = x⁴`
-- Função Seno: `f(x) = sin(x)`
-- Função Cosseno: `f(x) = cos(x)`
-- Função Gaussiana: `f(x) = e^(-x²)`
-- Função Sigmoide: `f(x) = 1 / (1 + e^(-x))`
-
-## Pré-requisitos
-
-Para executar o script, é necessário ter o Python 3 instalado com as seguintes bibliotecas:
-
+## Requisitos
+- Python 3.x
 - NumPy
 - Matplotlib
 
-Você pode instalá-las com o seguinte comando:
+## Instalação
+1. Clone o repositório ou baixe o script:
+   ```bash
+   git clone https://github.com/seuusuario/plotagem-funcoes-matematicas.git
+   cd plotagem-funcoes-matematicas
+   ```
+2. Instale as dependências necessárias:
+   ```bash
+   pip install numpy matplotlib
+   ```
 
-```bash
-pip install numpy matplotlib
-````
+## Uso
+1. Certifique-se de que todas as dependências estão instaladas.
+2. Execute o script:
+   ```bash
+   python plot_functions.py
+   ```
+3. O script abrirá uma janela exibindo a grade de gráficos 4x2. Feche a janela para encerrar o programa.
 
-## Execução
+## Estrutura do Código
+- **Importações**: Utiliza `numpy` para operações numéricas e `matplotlib.pyplot` para plotagem.
+- **Geração de Dados**: Cria um array `x` usando `np.linspace(-10, 10, 400)`.
+- **Funções**: Define uma lista de tuplas contendo valores `x`, valores `y` e títulos para cada função.
+- **Plotagem**: Usa `plt.subplots()` para criar uma grade 4x2 e plota cada função com títulos e formatação apropriados.
 
-Clone este repositório e execute o script principal:
+## Exemplo de Saída
+O script produz uma figura com 8 subgráficos, cada um mostrando uma função diferente. Os títulos são exibidos em formato matemático (e.g., \(x\), \(x^2\)), e a grade facilita a leitura.
 
-```bash
-git clone https://github.com/seuusuario/nome-do-repositorio.git
-cd nome-do-repositorio
-python visualizacao_funcoes.py
-```
-
-O programa exibirá um gráfico com subplots organizados em uma grade 4x2, cada um ilustrando uma das funções acima em um intervalo de `-10` a `10`.
-
-## Aplicação Didática
-
-Este material pode ser utilizado em aulas teóricas, oficinas práticas de programação e projetos integradores. Recomenda-se sua aplicação nas primeiras semanas do semestre para introduzir o pensamento computacional vinculado ao conteúdo matemático.
+## Contribuição
+Sinta-se à vontade para fazer um fork deste repositório e enviar pull requests para adicionar novas funções, melhorar a visualização ou aprimorar a documentação. Por favor, siga o estilo de código existente e inclua testes, se aplicável.
 
 ## Licença
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes (se não estiver incluído, considere adicionar um).
 
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
+## Agradecimentos
+- Inspirado em exemplos educacionais para visualização de funções matemáticas.
+- Utiliza bibliotecas de código aberto: NumPy e Matplotlib.
 
-```
+
