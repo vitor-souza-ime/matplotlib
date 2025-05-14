@@ -28,8 +28,8 @@ O script define oito funções matemáticas comuns e as visualiza em subgráfico
 ## Instalação
 1. Clone o repositório ou baixe o script:
    ```bash
-   git clone https://github.com/seuusuario/plotagem-funcoes-matematicas.git
-   cd plotagem-funcoes-matematicas
+   git clone https://github.com/vitor-souza-ime/matplotlib.git
+   cd matplotlib
    ```
 2. Instale as dependências necessárias:
    ```bash
